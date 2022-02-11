@@ -3,7 +3,7 @@
 Simple logger using console.log(), console.group(), some funky ASCII, coloring and custom delimiters - supports log-levels acc. to RFC5424.
 
 Simple logger using console.log(), console.group() and some funky ASCII, please note that additionally to the severity-level 
-according to RFC5424, another distinction is made here via 'type' This allows better fine-tuning of the logger. 
+according to [RFC5424](https://datatracker.ietf.org/doc/html/rfc5424), another distinction is made here via 'type' This allows better fine-tuning of the logger. 
 Lets assume you encounter a warning (level 4), but you still want to display the console-log with an error-decoration 
 in some special cases in order to draw attention when looking at the log, you can use the type 'err'.
 
