@@ -20,24 +20,24 @@ and set the correct path for 'logFileLocation'
 
 ## INFO: 
 
-### Logging levels/priorities according to RFC5424: */
+### Logging levels/priorities according to RFC5424:
       
- - emerg: 0,
- - alert: 1,
- - crit: 2,
- - error: 3,
- - warning: 4,
- - notice: 5,
- - info: 6,
- - debug: 7
+ - emerg:   0
+ - alert:   1
+ - crit:    2
+ - error:   3
+ - warning: 4
+ - notice:  5
+ - info:    6
+ - debug:   7
 
 
-### Logging states of the app in './config/log-level.json' (can be changed at runtime): */
+### Logging states of the app in './config/log-level.json' (can be changed at runtime):
  - verbose (log msgs of all priorities, 0-7)
  - normal  (log msgs of priorities 0-4)
  - silent  (no logs at all)
 
-### Logging source-types (adapt/extend as needed): */
+### Logging source-types (adapt/extend as needed):
  - db      -> database related msgs
  - app     -> main app module related msgs
  - route   -> route related msgs
