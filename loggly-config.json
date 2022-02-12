@@ -1,0 +1,5 @@
+{
+    "state":"verbose",
+    "writeToFile":false,
+    "logFileLocation":"/path/to/log"
+}
