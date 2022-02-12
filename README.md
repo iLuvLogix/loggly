@@ -7,8 +7,7 @@ according to [RFC5424](https://datatracker.ietf.org/doc/html/rfc5424), another d
 Lets assume you encounter a warning (level 4), but you still want to display the console-log with an error-decoration 
 in some special cases in order to draw attention when looking at the log, you can use the type 'err'.
 
-To additionally write the log to file, set the value for 'writeToFile' in 'loggly-config.json' to true 
-and set the correct path for 'logFileLocation'
+To additionally write the log to file, set the value for 'writeToFile' in 'loggly-config.json' to true and set the correct path for 'logFileLocation'
 
 ```
 //      .------.     _______________ 
@@ -34,7 +33,7 @@ and set the correct path for 'logFileLocation'
 | debug | 7 | 
 
 
-### Logging states of the app in './config/log-level.json' (can be changed at runtime):
+### Logging states of the app in './loggly-config.json' (can be changed at runtime):
 
 | Logging-state | behaviour |
 |---|---|
