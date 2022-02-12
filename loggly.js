@@ -3,7 +3,7 @@ var fs = require('file-system');
 /* INFO: Require 'colors' for coloring messages */
 var colors = require('colors');
 /* INFO: Define location of config-file for log-state of the application (adjust to your needs) */
-const locationLogglyConfig = `./config/loggly-config.json`;
+const locationLogglyConfig = `./loggly-config.json`;
 
 // Simple logger using console.log(), console.group() and some funky ASCII, please note that additionally to the severity-level 
 // according to RFC5424, another distinction is made here via 'type' This allows better fine-tuning of the logger. 
@@ -33,7 +33,7 @@ const locationLogglyConfig = `./config/loggly-config.json`;
 //      debug: 7
 // }
 
-/* INFO: Logging states of the app in './config/log-level.json' (can be changed at runtime): */
+/* INFO: Logging states of the app in './log-level.json' (can be changed at runtime): */
 //  verbose (log msgs of all priorities, 0-7)
 //  normal  (log msgs of priorities 0-4)
 //  silent  (log no msgs)
