@@ -2,9 +2,9 @@
   "name": "loggly",
   "version": "1.0.0",
   "description": "Simple logger",
-  "main": "loggly.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node loggly.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,7 +14,7 @@
   "author": "Christoph (iLuvLogix)",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.4.0",
-    "file-system": "^2.2.2",
+    "colors": "1.4.0",
+    "file-system": "^2.2.2"
   }
 }
