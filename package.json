@@ -1,0 +1,20 @@
+{
+  "name": "loggly",
+  "version": "1.0.0",
+  "description": "Simple logger",
+  "main": "loggly.js",
+  "scripts": {
+    "start": "node loggly.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iLuvLogix/loggly"
+  },
+  "author": "Christoph (iLuvLogix)",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "file-system": "^2.2.2",
+  }
+}
