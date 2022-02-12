@@ -51,3 +51,18 @@ Log-statement sources can be added/edited/removed, will be shown with source-spe
 | app | main app module related msgs |
 | route | route related msgs | 
 | mqtt | mqtt related msgs | 
+
+# Usage Example
+
+In this case we are logging an error if the env-vars can't be required, calling loggly with three arguments (msg, level, source).
+
+```
+const dotenvAbsolutePath = path.join(__dirname, '.env');
+const dotenv = require('dotenv').config({
+  path: dotenvAbsolutePath
+});
+if (dotenv.error) {
+  loggly.error(`ERROR WHILE READING ENV-VARS: \n${dotenv.error}`, 'err', 'app.js');
+  throw dotenv.error;
+}
+``` 
