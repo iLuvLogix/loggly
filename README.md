@@ -1,4 +1,4 @@
-# loggly
+# logification
 
 Simple logger using console.log(), console.group(), some funky ASCII, coloring and custom delimiters - supports log-levels acc. to RFC5424.
 
@@ -18,6 +18,10 @@ To additionally write the log to file, set the value for 'writeToFile' in 'loggl
 ```
 
 ## INFO: 
+
+### Installation: 
+
+`npm i logification --save`
 
 ### Logging levels/priorities according to RFC5424:
   
