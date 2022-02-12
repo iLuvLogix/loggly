@@ -67,12 +67,8 @@ const delimiterError= `     .-----.     _______________ `+`\n`+`   /  _)  __\\  
 
 /* INFO: Periodically read config-file (every 60s) to retrieve log-state of application*/ 
 function getLogState(){
-  
   this.logState = "verbose";
-
-  
   setInterval(() => {
-
     fs.readFile(locationLogglyConfig, 'utf8', function read(err, res) {
       if (err) {
         console.log(delimiterError.red);
@@ -88,7 +84,6 @@ function getLogState(){
     });
   }, 60000);
 }
-
 
 var currentLogState = new getLogState();
 
@@ -160,7 +155,6 @@ var handleMSG = (msg, type, origin, level) => {
   }
 }
 
-
 var filterMSG = (msg, type, origin, level) => {
   /* INFO: Check current log-state of application  */
   switch(currentLogState.logState) {
@@ -186,7 +180,7 @@ var filterMSG = (msg, type, origin, level) => {
    }
  }
 
-/* INFO: Exported function according to level/severity (0-7) */ 
+/* INFO: Exported functions according to level/severity (0-7) */ 
 
 module.exports = {
 
